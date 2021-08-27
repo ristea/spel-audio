@@ -1,0 +1,53 @@
+{
+  "exp_name": "spl",
+  "exp_path": "./experiments",
+  "about_experiment": "Here must be the experiment description!",
+
+  "labels_path": ".../",
+  "train_data_path": ".../species-audio-dataset/train",
+  "test_data_path": ".../species-audio-dataset/test",
+
+  "spel_data_path": ".../species-audio-dataset/spel",
+
+  "train_size": 0.80,
+  "valid_size": 0.20,
+  "test_size": 0.0,
+
+  "lr": 0.0005,
+  "lr_sch_step": 10,
+  "lr_sch_gamma": 0.1,
+  "weight_decay": 0.0001,
+  "batch_size": 16,
+
+  "loss_function": "bce_loss",
+
+  "get_only_tp": true,
+
+  "windows_size_fs": 8,
+  "windows_stride": 4,
+  "n_mels": 256,
+  "f_min": 0,
+  "f_max": null,
+  "sr": 48000,
+  "new_sr": 32000,
+
+  "train_epochs": 30,
+  "eval_net_epoch": 1,
+  "save_net_epochs": 10,
+
+  "spl_th": 0.995,
+  "add_spl_data": true,
+
+  "augment": true,
+  "noise_augm": true,
+  "noise_chance": 0.35,
+  "time_augm": true,
+  "time_chance": 0.35,
+  "spec_augm": false,
+  "spec_chance": 0,
+  "bird_augm": false,
+  "bird_chance": 0.25,
+
+  "print_loss": 20,
+  "resume_training": false
+}
