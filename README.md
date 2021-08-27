@@ -1,16 +1,10 @@
 #  Self-paced ensemble learning for speech and audio classification                                                                                    
 
-Combining multiple machine learning models into an ensemble is known to provide superior performance levels compared 
-to the individual components forming the ensemble. This is because models can complement each other in taking better decisions. 
-Instead of just combining the models, we propose a self-paced ensemble learning scheme in which 
-models learn from each other over several iterations. During the self-paced learning process based on pseudo-labeling, 
-in addition to improving the individual models, our ensemble also gains knowledge about the target domain. 
-To demonstrate the generality of our self-paced ensemble learning (SPEL) scheme, 
-we conduct experiments on three audio tasks. 
+We propose a self-paced ensemble learning scheme in which models learn from each other over several iterations. 
+During the self-paced learning process based on pseudo-labeling, in addition to improving the individual models, 
+our ensemble also gains knowledge about the target domain. 
 Our empirical results indicate that SPEL significantly outperforms the baseline ensemble models. 
-We also show that applying self-paced learning on individual models is less effective, 
-illustrating the idea that models in the ensemble actually learn from each other.
------------------------------------------
+
 -----------------------------------------                                                                                                                                      
 ### About
 In this project you can reproduce the results for the Rainforest Connection Species Audio Detection 
