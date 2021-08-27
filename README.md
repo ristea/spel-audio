@@ -1,4 +1,4 @@
-#  Self-paced ensemble learning for speech and audio classification                                                                                    
+#  Self-paced ensemble learning for speech and audio classification (Official implementation) - INTERSPEECH 2021                                                                            
 
 We propose a self-paced ensemble learning scheme in which models learn from each other over several iterations. 
 During the self-paced learning process based on pseudo-labeling, in addition to improving the individual models, 
@@ -7,14 +7,12 @@ Our empirical results indicate that SPEL significantly outperforms the baseline 
 
 -----------------------------------------                                                                                                                                      
 ### About
-In this project you can reproduce the results for the Rainforest Connection Species Audio Detection 
+This project can be used to reproduce the results for the Rainforest Connection Species Audio Detection 
 (https://www.kaggle.com/c/rfcx-species-audio-detection) data set. We added the SPEL algorithm for two
 different networks: ResNet and ResNeSt. 
 
-```
-> In order to work properly you need to have a python version older than 3.6
->> We used the following version 3.6.8
-```
+> In order to work properly, you need to have a python version older than 3.6
+> We used the following version 3.6.8
 
 ## Run experiments
 
@@ -25,7 +23,6 @@ In order to run the SPEL experiment you should do:
  - Run again from main.py "train_ensamble" method (on config.json you should have "add_spl_data" -> true)
  - Run from main.py "generate_spl_data" method
  and so on...
-
 
 Warning: The SPEL data is generated in "spel_data_path" directory (which is set in config.json). 
 When you run again the training, all data from directory will be considered at training. 
